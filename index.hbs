@@ -1,0 +1,56 @@
+{{!< default}}
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		
+
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Property</th>
+					<th>Explanation</th>
+					<th>Value</th>
+				</tr>
+			</thead>
+			<tbody>
+			{{#foreach posts}}
+				<tr>
+					<td>id</td>
+					<td>The id of the post.</td>
+					<td>{{id}}</td>
+				</tr>
+				<tr>
+					<td>title</td>
+					<td>The title of the post.</td>
+					<td>{{title}}</td>
+				</tr>
+				<tr>
+					<td>published_at</td>
+					<td>The time the post was published.</td>
+					<td>{{published_at}}</td>
+				</tr>
+				<tr>
+					<td>url</td>
+					<td>The relative URL of the post.</td>
+					<td>{{url}}</td>
+				</tr>
+				<tr>
+					<td>author</td>
+					<td>The author of the post.</td>
+					<td>{{author}}</td>
+				</tr>
+				<tr>
+					<td>content words="25"</td>
+					<td>The contents of the post (preservering HTML) with an optional number of words.</td>
+					<td>{{content words="20"}}</td>
+				</tr>
+				<tr>
+					<td>excerpt characters="20"</td>
+					<td>The contents of the post (without preserving HTML) with an optional number of characters.</td>
+					<td>{{excerpt characters="20"}}</td>
+				</tr>
+			{{/foreach}}
+			</tbody>
+		</table>
+	</div>
+</div>	
